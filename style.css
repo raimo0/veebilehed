@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+    border-width: 10px;
+    margin: 10px;
+    border: solid #686868;
+    border-width: 1px;
+    font-family: "Open Sans", sans-serif;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #000000;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+}
+
+header nav ul {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    width: max-content;
+    padding: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 20 px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #a8a8a8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul li p {
+    font-size: 12px;
+    color: #000000;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+hr {
+    color: #4f5663;
+    border-width: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.index-header {
+    padding: 20px;
+}
+
+.index-header img{
+    float: right;
+    height: 150px;
+    display: none;
+    padding-left: 20px;
+}
+
+.gallery-h2 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #3a383d;
+    text-transform: uppercase;
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    flex-basis: 300px;
+    
+}
+.gallery-image img {
+    border-radius: 500%;
+    width: 70%;
+}
+
+.post-header {
+        /*kujundus*/
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px #000000;
+    
+        /*positsioneerimine*/
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.gallery-image img:hover + .post-header {
+    display: block;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media only screen and (min-width: 950px) {
+    header h1 a {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .index-header {
+        padding: 100px;
+    }
+
+    #retseptid {
+        display: none;
+    }
+
+    .index-header img{
+        float: right;
+        display: inline;
+    }
+
+    header img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
+
+    header nav ul li {
+        padding: 20px 90px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+    }
+
+    .gallery-h2 {
+        font-size: 28px;
+    }
+    footer ul {
+        padding-left: 70px;
+    }
+    
+    }
