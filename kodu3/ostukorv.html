@@ -14,17 +14,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
   <!--minu CSS-->
   <link rel="stylesheet" href="custom.css">
+
 </head>
 
 <body>
-<!-- Navigatsioon --->
+  <!-- Navigatsioon --->
   <nav class="navbar fixed-top navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand me-5" href="#">Bootstrap 5</a>
+      <a class="navbar-brand me-5" href="./index.html">Bootstrap 5</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
@@ -46,8 +47,8 @@
             </ul>
           </li>
         </ul>
-       
-		<!--Otsi vorm -->
+
+        <!--Otsi vorm -->
         <form class="d-flex me-1">
           <div class="input-group">
             <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
@@ -56,98 +57,67 @@
         </form>
       </div>
       <div class="float-end">
-       
-	   <!--Login ikoon-->
+
+        <!--Login ikoon-->
         <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
-        
-	   <!--Ostukorvi ikoon-->
+
+        <!--Ostukorvi ikoon-->
         <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
-      
-	  </div>
+      </div>
     </div>
   </nav>
-  
-  <!--Tee ise: siia konteinerisse lisa pildikarusell-->
-  <div class="container mt-5 pt-4">
-    <div class="row">
-      <div id="carouselExampleControls" class="carousel slide mt-3 mb-3" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.penelopechilvers.co.uk/media/amasty/blog/cache/j/o/1920/768/journal-banner-boots-2.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-lg-block">
-              <h1>Tekst</h1>
-              <p>Peaks ainult suurel ekraanil näha olema</p>
+  <section>
+    <div class="container">
+      <div class="row align-items-start mt-5">
+        <h4>Teie ostukorv</h4>
+        <form>
+          <div class="row mb-auto p-2">
+            <div class="col-lg-6">
+              <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" width="100%" alt="Image">
+            </div>
+            <div class="col-lg-6">
+              <h2>Ilusad saapad</h2>
+              <p>Hind 199 €</p>
+              <br>
+              <label for="kogus" class="form-label">Kogus:</label>
+              <select class="form-select form-sm" id="kogus">
+                <option value="0">0</option>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <br>
+              <label for="nimi" class="form-label">Nimi:</label>
+              <input type="text" id="nimi" name="nimi" class="form-control form-sm mb-2" placeholder="Nimi">
+              <br>
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="email" id="email" name="email" class="form-control form-sm mb-2" placeholder="E-mail">
+              <br>
+              <label for="aadress" class="form-label">Aadress:</label>
+              <input type="text" id="aadress" name="aadress" class="form-control form-sm mb-2" placeholder="Aadress">
+              <br>
+              <label for="tarne" class="form-label">Tarne:</label>
+              <select class="form-select form-sm mb-2" id="tarne" name="tarne">
+                <option selected value="tasuta">Tasuta tarne</option>
+                <option value="kiire">Kiire tarne 10 €</option>
+              </select>
+              <br>
+              <p>Tarne hind: <span id="tarne_hind">0 €</span></p>
+              <p id="kokku" class="mb-0"> Kokku: <span>199 €</span></p>
+              <br>
+              <a href="#" class="btn btn-primary btn-lg mb-3">Maksma</a>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="https://cdn.penelopechilvers.co.uk/media/amasty/blog/cache/j/o/1920/768/journal-banner-boots-2.jpg" class="d-block w-100" alt="">
+          <div class="p-2 mx-auto">
+        
           </div>
-          <div class="carousel-item">
-            <img src="https://cdn.penelopechilvers.co.uk/media/amasty/blog/cache/j/o/1920/768/journal-banner-boots-2.jpg" class="d-block w-100" alt="">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      </form>
     </div>
-  </div>
-  
-  <!--Tooted avalehel kaartidena-->
-  <div class="container overflow-hidden">
-    <div class="row g-4 row justify-content-center">
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="toode.html" class="btn btn-primary float-end">199 €</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>149 €</s> 99 € </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6">
-        <div class="card">
-          <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>159 €</s> 79 €</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3  col-md-6">
-        <div class="card">
-          <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="card-img-top" alt="pilt">
-          <div class="card-body">
-            <h5 class="card-title text-primary-emphasis">Saapad 4</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lectus, egestas at
-              pretium lobortis.</p>
-            <a href="#" class="btn btn-primary float-end"><s>129 €</s> 69 €</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  
+  </section>
+
+
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
   <footer class="footer bg-light">
     <div class="container">
@@ -172,17 +142,16 @@
       </div>
     </div>
   </footer>
-  
+
   <!--Popper.js-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  
+
   <!--Bootstrap.js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
